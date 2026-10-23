@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 22px; font-family: Arial, Helvetica, sans-serif; background: radial-gradient(circle at top, #273c59, #10131d 60%); color: #f7f8fc; }
+.calculator { width: min(100%, 360px); padding: 24px; border: 1px solid #ffffff20; border-radius: 28px; background: #171c29; box-shadow: 0 24px 70px #0005; }
+.heading p { margin: 0 0 8px; font-size: 10px; letter-spacing: 2.5px; color: #9daac2; font-weight: 700; }
+h1 { margin: 0 0 22px; font-size: 26px; }
+.screen { min-height: 112px; padding: 18px 14px; margin-bottom: 18px; border-radius: 16px; background: #0d111a; display: flex; flex-direction: column; align-items: flex-end; justify-content: flex-end; overflow: hidden; }
+.expression { width: 100%; min-height: 18px; text-align: right; color: #9daac2; font-size: 14px; overflow-wrap: anywhere; }
+.display { width: 100%; text-align: right; font-size: clamp(30px, 9vw, 42px); font-weight: 600; overflow-wrap: anywhere; }
+.keys { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+button { min-width: 0; height: 56px; border: 1px solid #ffffff08; border-radius: 14px; background: #252c3c; color: #f7f8fc; font-size: 19px; cursor: pointer; transition: transform .12s, background .12s; }
+button:hover { background: #343e53; }
+button:active { transform: scale(.95); }
+.utility { background: #3b3040; color: #ffc9d6; font-size: 15px; font-weight: 700; }
+.operator { background: #263b4b; color: #9fe4ff; }
+.equals { background: #9ef0cd; color: #10241d; font-weight: 800; }
+.equals:hover { background: #c0f8df; }
+.zero { grid-column: span 2; }
+.hint { margin: 18px 0 0; text-align: center; color: #8f9ab0; font-size: 11px; }
